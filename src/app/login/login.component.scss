@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  user-select: none;
-}
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+//*{
+//  margin: 0;
+//  padding: 0;
+//  box-sizing: border-box;
+//  user-select: none;
+//}
 .bg-img{
   background: url('/assets/images/login1.jpg');
-  height: 100vh;
+  height:  650px;
   background-size: cover;
   background-position: center;
 }
@@ -49,6 +49,12 @@
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (max-width: 600px) {
+  .bg-img{
+    background: url('/assets/images/login1.jpg');
+    height:  624px;
+    background-size: cover;
+    background-position: center;
+  }
   .content {
     position: absolute;
     top: 50%;
@@ -56,7 +62,7 @@
     z-index: 999;
     text-align: center;
     padding: 60px 14px;
-    width: 315px;
+    width: 285px;
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.04);
     box-shadow: -1px 4px 25px 0px rgb(0 0 0);
