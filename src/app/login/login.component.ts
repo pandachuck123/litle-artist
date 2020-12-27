@@ -29,8 +29,10 @@ export class LoginComponent implements OnInit {
     if(value.emailId=='abc@gmail.com' && value.password=='1234567'){
       this.toastr.success('Login Successful!.');
       this.router.navigate(['/home']);
+    }else{
+      this.toastr.error('Invalid EmailId or Password');
+
     }
-    this.toastr.error('Invalid EmailId or Password');
   }
 
 }
