@@ -53,6 +53,12 @@ import {LoginModule} from "./login/login.module";
 import {CommonModule} from "@angular/common";
 import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './home/home.component';
+import { ReportUploadComponent } from './report-upload/report-upload.component';
+import { ProjectSetupComponent } from './project-setup/project-setup.component';
+import { ProjectReportComponent } from './project-report/project-report.component';
+import { StudentReportComponent } from './student-report/student-report.component';
+import { TeacherReportComponent } from './teacher-report/teacher-report.component';
+import { ReportComponent } from './report/report.component';
 
 
 
@@ -60,7 +66,13 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     PagesComponent,
-    HomeComponent
+    HomeComponent,
+    ReportUploadComponent,
+    ProjectSetupComponent,
+    ProjectReportComponent,
+    StudentReportComponent,
+    TeacherReportComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
