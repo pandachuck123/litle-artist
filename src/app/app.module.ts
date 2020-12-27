@@ -51,12 +51,16 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import {LoginModule} from "./login/login.module";
 import {CommonModule} from "@angular/common";
+import { PagesComponent } from './pages/pages.component';
+import { HomeComponent } from './home/home.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PagesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

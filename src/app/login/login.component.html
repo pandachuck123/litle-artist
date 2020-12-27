@@ -1,1 +1,36 @@
-<p>login works!</p>
+<section class="bg-img">
+  <div class="content">
+        <header     style=" color: darkblue;">Login Form</header>
+
+    <div class="row">
+      <div class="col-md-10 col-sm-12 col-xs-12 ">
+        <!--<div class="card h-90 pl-5 pr-5" >-->
+          <form [formGroup]="login">
+            <div class="col-md-10 mt-3">
+                <mat-form-field class="w-100 len">
+                  <input matInput placeholder="Email ID"   formControlName="emailId"  autocomplete="off" required>
+                  <mat-error *ngIf="login.controls.emailId.errors?.required">Email ID is required</mat-error>
+                  <mat-error *ngIf="login.controls.emailId.hasError('pattern')">Please Enter Correct Format</mat-error>
+                </mat-form-field>
+             </div>
+            <div class="col-md-10 mt-3">
+              <mat-form-field class="w-100 len">
+                <input matInput placeholder="Password"   formControlName="password"  autocomplete="off" required minlength="6" [type]="hide ? 'password' : 'text'">
+                <mat-icon style="cursor: pointer" matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                <mat-error *ngIf="login.controls.emailId.errors?.required">Password is required</mat-error>
+                <mat-error *ngIf="login.controls.emailId.hasError('minlength')">Password isn't long enough, minimum of 6 characters</mat-error>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-12 text-center mt-5 ">
+              <button mat-button type="submit" style="background: darkblue; color: white" (click)="submit(login.value)" >Submit</button>
+
+            </div>
+          </form>
+      <!--</div>-->
+      </div>
+    </div>
+
+  </div>
+
+</section>
