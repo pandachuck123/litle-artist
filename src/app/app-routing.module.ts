@@ -14,8 +14,7 @@ import {ReportComponent} from "./navbars/report/report.component";
 
 const routes: Routes = [
   {path: '' , redirectTo: 'login', pathMatch: 'full'},
-  {path: '',
-    component: PagesComponent, children: [
+  {path: '', component: PagesComponent, children: [
       // { path: 'home', loadChildren: () => import('./navbars/navbars.module').then(m => m.NavbarsModule) },
       { path: 'home', component: HomeComponent, data: { breadcrumb: 'Home' } },
       { path: 'report-upload', component: ReportUploadComponent, data: { breadcrumb: 'report' } },

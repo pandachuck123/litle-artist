@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   submit(value){
     console.log(value,'value..')
     if(value.emailId=='abc@gmail.com' && value.password=='1234567'){
