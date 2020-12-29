@@ -59,6 +59,7 @@ import { ProjectReportComponent } from './project-report/project-report.componen
 import { StudentReportComponent } from './student-report/student-report.component';
 import { TeacherReportComponent } from './teacher-report/teacher-report.component';
 import { ReportComponent } from './report/report.component';
+import { DialogBoxComponent } from './dialog-box/dialog-box.component';
 
 
 
@@ -72,7 +73,8 @@ import { ReportComponent } from './report/report.component';
     ProjectReportComponent,
     StudentReportComponent,
     TeacherReportComponent,
-    ReportComponent
+    ReportComponent,
+    DialogBoxComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
