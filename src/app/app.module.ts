@@ -49,17 +49,18 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SelectDropDownModule } from 'ngx-select-dropdown'
+
 import {LoginModule} from "./login/login.module";
 import {CommonModule} from "@angular/common";
 import { PagesComponent } from './pages/pages.component';
-import { HomeComponent } from './home/home.component';
-import { ReportUploadComponent } from './report-upload/report-upload.component';
-import { ProjectSetupComponent } from './project-setup/project-setup.component';
-import { ProjectReportComponent } from './project-report/project-report.component';
-import { StudentReportComponent } from './student-report/student-report.component';
-import { TeacherReportComponent } from './teacher-report/teacher-report.component';
-import { ReportComponent } from './report/report.component';
-import { DialogBoxComponent } from './dialog-box/dialog-box.component';
+import {HomeComponent} from "./navbars/home/home.component";
+import {ReportUploadComponent} from "./navbars/report-upload/report-upload.component";
+import {StudentReportComponent} from "./navbars/student-report/student-report.component";
+import {TeacherReportComponent} from "./navbars/teacher-report/teacher-report.component";
+import {ProjectReportComponent} from "./navbars/project-report/project-report.component";
+import {ReportComponent} from "./navbars/report/report.component";
+import {ProjectSetupComponent} from "./navbars/project-setup/project-setup.component";
 
 
 
@@ -69,12 +70,12 @@ import { DialogBoxComponent } from './dialog-box/dialog-box.component';
     PagesComponent,
     HomeComponent,
     ReportUploadComponent,
-    ProjectSetupComponent,
-    ProjectReportComponent,
     StudentReportComponent,
     TeacherReportComponent,
+    ProjectReportComponent,
     ReportComponent,
-    DialogBoxComponent
+    ProjectSetupComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -90,6 +91,8 @@ import { DialogBoxComponent } from './dialog-box/dialog-box.component';
     ToastrModule.forRoot(),
     NgSelectModule,
     HttpClientModule,
+
+    SelectDropDownModule,
 
     MatSliderModule,
     MatProgressSpinnerModule,
@@ -126,7 +129,8 @@ import { DialogBoxComponent } from './dialog-box/dialog-box.component';
     MatTooltipModule,
     MatTreeModule,
 
-    LoginModule
+    LoginModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
