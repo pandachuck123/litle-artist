@@ -3,8 +3,8 @@ import {CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA} from '@angular/core'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {HttpClientModule} from "@angular/common/http";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {SlickCarouselModule} from 'ngx-slick-carousel';
@@ -61,6 +61,8 @@ import {TeacherReportComponent} from "./navbars/teacher-report/teacher-report.co
 import {ProjectReportComponent} from "./navbars/project-report/project-report.component";
 import {ReportComponent} from "./navbars/report/report.component";
 import {ProjectSetupComponent} from "./navbars/project-setup/project-setup.component";
+import { AddUserComponent } from './navbars/add-user/add-user.component';
+import { EditUserComponent } from './navbars/edit-user/edit-user.component';
 
 
 
@@ -75,6 +77,8 @@ import {ProjectSetupComponent} from "./navbars/project-setup/project-setup.compo
     ProjectReportComponent,
     ReportComponent,
     ProjectSetupComponent,
+    AddUserComponent,
+    EditUserComponent,
 
   ],
   imports: [
