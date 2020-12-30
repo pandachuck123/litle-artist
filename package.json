@@ -26,6 +26,7 @@
     "@ng-select/ng-select": "^5.0.11",
     "@ng-toolkit/universal": "^8.1.0",
     "@nguniversal/express-engine": "^10.1.0",
+    "angular-material-fileupload": "^3.0.1",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "ngx-select-dropdown": "^1.4.4",
