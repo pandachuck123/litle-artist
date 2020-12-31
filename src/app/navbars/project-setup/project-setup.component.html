@@ -1,8 +1,6 @@
 <div class="container">
   <h1>Angular CRUD Example - ItSolutionStuff.com</h1>
-
   <a href="#" routerLink="./add-user/" class="btn btn-success">Create New Post</a>
-
   <table class="table table-bordered">
     <tr>
       <th>ID</th>
@@ -10,21 +8,23 @@
       <th>Body</th>
       <th width="220px">Action</th>
     </tr>
-    <tr *ngFor="let post of posts">
+    <tr *ngFor="let post of posts| paginate: { id: 'listing_pagination',
+    itemsPerPage: 10,
+    currentPage: page,
+    totalItems: totalRecords }">
       <td>{{ post.id }}</td>
       <td>{{ post.title }}</td>
       <td>{{ post.body }}</td>
       <td>
-<!--        <a href="#" [routerLink]="['/post/', post.id, 'view']" class="btn btn-info">View</a>-->
+        <!--        <a href="#" [routerLink]="['/post/', post.id, 'view']" class="btn btn-info">View</a>-->
         <a href="#" [routerLink]="['/edit-user/', post.id, 'edit']" class="btn btn-primary">Edit</a>
         <button type="button" (click)="deletePost(post.id)" class="btn btn-danger">Delete</button>
       </td>
     </tr>
   </table>
 </div>
-<mat-paginator [length]="length"
-               [pageSize]="pageSize"
-               [pageSizeOptions]="pageSizeOptions"
-               (page)="pageEvent = $event">
-</mat-paginator>
+<pagination-controls  id="listing_pagination" maxSize="5"
+                      directionLinks="true"
+                      (pageChange)="page = $event">
 
+</pagination-controls>

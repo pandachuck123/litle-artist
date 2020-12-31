@@ -63,6 +63,7 @@ import {ReportComponent} from "./navbars/report/report.component";
 import {ProjectSetupComponent} from "./navbars/project-setup/project-setup.component";
 import { AddUserComponent } from './navbars/add-user/add-user.component';
 import { EditUserComponent } from './navbars/edit-user/edit-user.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -97,6 +98,7 @@ import { EditUserComponent } from './navbars/edit-user/edit-user.component';
     HttpClientModule,
 
     SelectDropDownModule,
+    NgxPaginationModule,
 
     MatSliderModule,
     MatProgressSpinnerModule,

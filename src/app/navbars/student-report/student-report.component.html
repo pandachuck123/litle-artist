@@ -17,11 +17,30 @@
             type="file"
             class="form-control"
             (change)="onFileChange($event)">
+          <div *ngIf="imageSrc != ''">
+            <mat-icon (click)="onNoClick()" class="cancelPoint" >cancel</mat-icon>
+          </div>
+          <img [src]="imageSrc" *ngIf="imageSrc" class="imageBox">
         </div>
-        <div *ngIf="imageSrc != ''">
-        <mat-icon (click)="onNoClick()" class="cancelPoint" >cancel</mat-icon>
+
+        <div class="button mt-3 text-right w-100">
+          <button mat-raised-button color="primary"  (click)="submit(form.value)" >Submit</button>
         </div>
-        <img [src]="imageSrc" *ngIf="imageSrc" class="imageBox">
+
+        <div class="col-md-12 mt-3" >
+          <tr>
+            <th>Student Name</th>
+            <th>Upload File Name</th>
+            <th>File</th>
+          </tr>
+          <tr *ngFor="let table of image;let i = index">
+            <td>{{table.studentName}}</td>
+            <td>{{table.file}}</td>
+            <td>Doe</td>
+
+          </tr>
+
+        </div>
 
       </div>
     </form>
