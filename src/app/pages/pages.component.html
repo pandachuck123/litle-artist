@@ -79,7 +79,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
 
-        <button type="button" id="sidebarCollapse" class="btn btn-info"  onclick="openNav()" >
+        <button type="button" id="sidebarCollapse" class="btn btn-info" data-toggle="collapse" data-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  >
           <i class="fas fa-align-left"></i>
           <!--<span>Toggle Sidebar</span>-->
         </button>
@@ -104,6 +104,14 @@
   </div>
 
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+    });
+  });
+</script>
 
 
 
