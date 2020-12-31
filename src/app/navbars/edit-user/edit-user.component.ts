@@ -23,7 +23,7 @@ export class EditUserComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['postId'];
-    this.postService.find(this.id).subscribe((data: Post)=>{
+    this.postService.find(this.id).subscribe((data: Post) => {
       this.post = data;
     });
 
@@ -41,8 +41,8 @@ export class EditUserComponent implements OnInit {
     console.log(this.form.value);
     this.postService.update(this.id, this.form.value).subscribe(res => {
       console.log('Post updated successfully!');
-      this.router.navigateByUrl('post/index');
-    })
+      this.router.navigateByUrl('project-setup');
+    });
   }
 
 }

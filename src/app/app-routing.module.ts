@@ -9,6 +9,8 @@ import {TeacherReportComponent} from "./navbars/teacher-report/teacher-report.co
 import {ProjectSetupComponent} from "./navbars/project-setup/project-setup.component";
 import {ProjectReportComponent} from "./navbars/project-report/project-report.component";
 import {ReportComponent} from "./navbars/report/report.component";
+import {EditUserComponent} from './navbars/edit-user/edit-user.component';
+import {AddUserComponent} from './navbars/add-user/add-user.component';
 
 
 
@@ -22,6 +24,8 @@ const routes: Routes = [
       { path: 'teacher-report', component: TeacherReportComponent, data: { breadcrumb: 'teacher' } },
       { path: 'project-report', component: ProjectReportComponent, data: { breadcrumb: 'project' } },
       { path: 'report', component: ReportComponent, data: { breadcrumb: 'report' } },
+      { path: 'edit-user/:postId/edit', component: EditUserComponent, data: { breadcrumb: 'edit' } },
+      { path: 'add', component: AddUserComponent, data: { breadcrumb: 'add' } },
       { path: 'project-setup', component: ProjectSetupComponent, data: { breadcrumb: 'project' } },
     ]
   },

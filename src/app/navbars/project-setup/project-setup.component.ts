@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../post/post.service';
 import { Post } from '../post/post';
+import {MatPaginatorModule, PageEvent} from '@angular/material/paginator';
+
 
 
 
@@ -10,17 +12,29 @@ import { Post } from '../post/post';
   styleUrls: ['./project-setup.component.scss']
 })
 export class ProjectSetupComponent  implements OnInit {
+  length = 100;
+  pageSize = 10;
+  pageSizeOptions: number[] = [5, 10, 25, 100];
+
+  // MatPaginator Output
+  pageEvent: PageEvent;
 
   posts: Post[] = [];
 
   constructor(public postService: PostService) { }
 
   ngOnInit(): void {
-    this.postService.getAll().subscribe((data: Post[])=>{
+    this.postService.getAll().subscribe((data: Post[]) => {
       this.posts = data;
       console.log(this.posts);
-    })
+    });
   }
+  // setPageSizeOptions(setPageSizeOptionsInput: string) {
+  //   if (setPageSizeOptionsInput) {
+  //     this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
+  //   }
+  // }
+  //
 
   deletePost(id){
     this.postService.delete(id).subscribe(res => {
