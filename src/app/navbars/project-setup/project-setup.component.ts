@@ -10,6 +10,7 @@ import {MatPaginatorModule, PageEvent} from '@angular/material/paginator';
 export class ProjectSetupComponent  implements OnInit {
   totalRecords:number;
   page:number =1;
+  searchText;
   posts: Post[] = [];
   constructor(public postService: PostService) { }
   ngOnInit(): void {

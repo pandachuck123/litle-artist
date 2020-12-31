@@ -64,6 +64,7 @@ import {ProjectSetupComponent} from "./navbars/project-setup/project-setup.compo
 import { AddUserComponent } from './navbars/add-user/add-user.component';
 import { EditUserComponent } from './navbars/edit-user/edit-user.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import {Ng2SearchPipeModule} from 'ng2-search-filter';
 
 
 
@@ -96,6 +97,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     ToastrModule.forRoot(),
     NgSelectModule,
     HttpClientModule,
+    Ng2SearchPipeModule,
+
 
     SelectDropDownModule,
     NgxPaginationModule,
