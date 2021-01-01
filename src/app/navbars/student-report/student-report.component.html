@@ -1,51 +1,66 @@
 <section>
-  <h1>Student Report</h1>
-<div fxLayoutWrap fxLayout="row" fxLayoutAlign="center">
-  <div fxFlex="100" fxFlex.gt-sm="90" fxFlex.sm="90" class="flex-p">
-    <form [formGroup]="form" >
-      <div class="row">
-        <div class="col-md-6 mt-3" >
-          <mat-placeholder>Select Student<span class="error">*</span></mat-placeholder>
-          <!--<ngx-select-dropdown  formControlName="studentName"  [config]="config" [options]="studentLists" required ></ngx-select-dropdown>-->
-          <ngx-select-dropdown  formControlName="studentName"  [config]="config"  [options]="studentLists" required ></ngx-select-dropdown>
+<!--<div class="border border-dark" >-->
+  <!--<div >-->
+    <div >
+      <div class="contBox" >
+        <h1>Student Report</h1>
+        <div fxLayoutWrap fxLayout="row" fxLayoutAlign="center">
+          <div fxFlex="100" fxFlex.gt-sm="90" fxFlex.sm="90" class="flex-p">
+            <form [formGroup]="form" >
+              <div class="row">
+                <div class="col-md-6 mt-3" >
+                  <mat-placeholder>Select Student<span class="error">*</span></mat-placeholder>
+                  <!--<ngx-select-dropdown  formControlName="studentName"  [config]="config" [options]="studentLists" required ></ngx-select-dropdown>-->
+                  <ngx-select-dropdown  formControlName="studentName"  [config]="config"  [options]="studentLists" required ></ngx-select-dropdown>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="file">File</label>
+                  <input
+                    formControlName="file"
+                    id="file"
+                    type="file"
+                    class="form-control"
+                    (change)="onFileChange($event)">
+                  <div *ngIf="imageSrc != ''">
+                    <mat-icon (click)="onNoClick()" class="cancelPoint" >cancel</mat-icon>
+                  </div>
+                  <img [src]="imageSrc" *ngIf="imageSrc" class="imageBox">
+                </div>
+
+                <div class="button mt-3 text-right w-100">
+                  <button mat-raised-button color="accent"  (click)="submit(form.value)" >Submit</button>
+                </div>
+
+                <div class="col-md-12 mt-3" >
+                  <tr>
+                    <th>Student Name</th>
+                    <th>Upload File Name</th>
+                    <th>File</th>
+                  </tr>
+                  <tr *ngFor="let table of image;let i = index">
+                    <td>{{table.studentName}}</td>
+                    <td>{{table.file}}</td>
+                    <td>Doe</td>
+
+                  </tr>
+
+                </div>
+
+              </div>
+            </form>
           </div>
-        <div class="form-group col-md-6">
-          <label for="file">File</label>
-          <input
-            formControlName="file"
-            id="file"
-            type="file"
-            class="form-control"
-            (change)="onFileChange($event)">
-          <div *ngIf="imageSrc != ''">
-            <mat-icon (click)="onNoClick()" class="cancelPoint" >cancel</mat-icon>
-          </div>
-          <img [src]="imageSrc" *ngIf="imageSrc" class="imageBox">
         </div>
-
-        <div class="button mt-3 text-right w-100">
-          <button mat-raised-button color="primary"  (click)="submit(form.value)" >Submit</button>
-        </div>
-
-        <div class="col-md-12 mt-3" >
-          <tr>
-            <th>Student Name</th>
-            <th>Upload File Name</th>
-            <th>File</th>
-          </tr>
-          <tr *ngFor="let table of image;let i = index">
-            <td>{{table.studentName}}</td>
-            <td>{{table.file}}</td>
-            <td>Doe</td>
-
-          </tr>
-
-        </div>
-
       </div>
-    </form>
-  </div>
-</div>
+
+
+    </div>
+  <!--</div>-->
+  <!--<br>-->
+<!--</div>-->
+
+
+
+
 </section>
 
 

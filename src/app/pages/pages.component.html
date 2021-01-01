@@ -1,140 +1,29 @@
 
-<div class="wrapper">
-  <!-- Sidebar  -->
-  <nav id="sidebar" class="sidenav">
+<nav class="nav-area ">
+  <ul>
+    <li> <img src="assets/images/logo.jpg" alt="little-logo" title="little-Logo" style="height: 50px;margin-left: 54px;">
+    </li>
+    <li><a [routerLink]="['/home']">Home</a></li>
+    <!--<li><a href="/Service">Search Student</a></li>-->
 
-    <div class="sidebar-header">
-      <img src="assets/images/logo.jpg" alt="artists-logo" title="Artists-Logo" style=" height: 100px; width: 243px; margin-bottom: 52px;margin-left: 1px;">
-    </div>
+    <li class="drop-down"><a>Report</a>
+      <ul >
+        <li class="dropdown1" ><a [routerLink]="['/student-report']">Student Report</a></li>
+        <li class="dropdown2" ><a [routerLink]="['/teacher-report']">Teacher Report</a></li>
+      </ul>
+    </li>
 
-    <ul class="list-unstyled components">
-      <li class="active">
-        <a [routerLink]="['/home']">Home</a>
-      </li>
+    <!--<li><a href="/Gallery">Today Slot</a></li>-->
+    <li><a [routerLink]="['/student-master']">Student Master</a></li>
 
-      <li >
-        <a href="#reportmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Report</a>
-        <ul class="collapse list-unstyled" id="reportmenu">
-          <li>
-            <a [routerLink]="['/teacher-report']">Teacher Report</a>
-          </li>
-          <li>
-            <a [routerLink]="['/student-report']">Student Report</a>
-          </li>
-          <li>
-            <a [routerLink]="['/teacher-report']">Monthly Report</a>
-          </li>
-          <li>
-            <a [routerLink]="['/teacher-report']">Login Report</a>
-          </li>
-        </ul>
-      </li>
+    <li><a [routerLink]="['/logout']">Log Out</a></li>
 
-      <li>
-        <a [routerLink]="['/project-setup']">Project Setup</a>
-      </li>
+  </ul>
 
-      <li>
-        <a href="#adminmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Admin Profile</a>
-        <ul class="collapse list-unstyled" id="adminmenu">
-          <li>
-            <a [routerLink]="['/teacher-report']">Password Create</a>
-          </li>
-          <li>
-            <a [routerLink]="['/teacher-report']">Upload Student Data</a>
-          </li>
-
-        </ul>
-      </li>
-
-      <li>
-        <a href="#teacherMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Teacher Login</a>
-        <ul class="collapse list-unstyled" id="teacherMenu">
-          <li>
-            <a [routerLink]="['/home']">Home</a>
-          </li>
-          <li>
-            <a [routerLink]="['/student-report']">Student Report</a>
-          </li>
-          <li>
-            <a [routerLink]="['/teacher-report']">Search Student</a>
-          </li>
-          <li>
-            <a [routerLink]="['/teacher-report']">Today Slot</a>
-          </li>
-          <li>
-            <a [routerLink]="['/teacher-report']">Teacher Profile(Logout)</a>
-          </li>
-        </ul>
-      </li>
-
-
-    </ul>
-
-  </nav>
-
-  <!-- Page Content  -->
-  <div id="content">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-
-        <button type="button" id="sidebarCollapse" class="btn btn-info" data-toggle="collapse" data-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  >
-          <i class="fas fa-align-left"></i>
-          <!--<span>Toggle Sidebar</span>-->
-        </button>
-        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-align-justify"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a  style="color: white" class="nav-link " href="#">Logout</a>
-            </li>
-            <!--<li class="nav-item">-->
-              <!--<a class="nav-link" href="#">Page</a>-->
-            <!--</li>-->
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <router-outlet></router-outlet>
-  </div>
-
-</div>
-
-<!--<script type="text/javascript">-->
-  <!--$(document).ready(function () {-->
-    <!--$('#sidebarCollapse').on('click', function () {-->
-      <!--$('#sidebar').toggleClass('active');-->
-    <!--});-->
-  <!--});-->
-<!--</script>-->
-
-
-
-
-
-
-
-<!--<mat-drawer-container class="example-container" >-->
-  <!--<mat-drawer #drawer >I-->
-<!--<div class="sidenav">-->
-  <!--<a [routerLink]="'/accounts'">About</a>-->
-  <!--<a [routerLink]="'/accounts'">Services</a>-->
-  <!--<a  [routerLink]="'/accounts'">Clients</a>-->
-  <!--<a  [routerLink]="'/accounts'">Contact</a>-->
-<!--</div>-->
-  <!--</mat-drawer>-->
-  <!--<mat-drawer-content>-->
-    <!--<button mat-icon-button><mat-icon (click)="drawer.toggle()">menu</mat-icon></button>-->
-    <!--<div >-->
-   <!--<router-outlet></router-outlet>-->
+</nav>
+  <!--<div class="w-100">-->
     <!--</div>-->
-  <!--</mat-drawer-content>-->
-<!--</mat-drawer-container>-->
 
+<router-outlet></router-outlet>
 
 

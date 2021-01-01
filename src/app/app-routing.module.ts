@@ -17,7 +17,6 @@ import {AddUserComponent} from './navbars/add-user/add-user.component';
 const routes: Routes = [
   {path: '' , redirectTo: 'login', pathMatch: 'full'},
   {path: '', component: PagesComponent, children: [
-      // { path: 'home', loadChildren: () => import('./navbars/navbars.module').then(m => m.NavbarsModule) },
       { path: 'home', component: HomeComponent, data: { breadcrumb: 'Home' } },
       { path: 'report-upload', component: ReportUploadComponent, data: { breadcrumb: 'report' } },
       { path: 'student-report', component: StudentReportComponent, data: { breadcrumb: 'student' } },
@@ -26,7 +25,8 @@ const routes: Routes = [
       { path: 'report', component: ReportComponent, data: { breadcrumb: 'report' } },
       { path: 'edit-user/:postId/edit', component: EditUserComponent, data: { breadcrumb: 'edit' } },
       { path: 'add', component: AddUserComponent, data: { breadcrumb: 'add' } },
-      { path: 'project-setup', component: ProjectSetupComponent, data: { breadcrumb: 'project' } },
+      // { path: 'project-setup', component: ProjectSetupComponent, data: { breadcrumb: 'project' } },
+      { path: 'student-master', component: ProjectSetupComponent, data: { breadcrumb: 'project' } },
     ]
   },
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
