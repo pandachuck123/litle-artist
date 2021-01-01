@@ -10,7 +10,7 @@
 
       <li>
         <a [routerLink]="['/home']">
-          <i class="fa fa-dashboard fa-lg"></i> home
+          <i class="fas fa-home"></i> home
         </a>
       </li>
 
@@ -37,7 +37,7 @@
       </li>
 
       <li>
-        <a [routerLink]="['/logout']">
+        <a [routerLink]="['/login']" (click)="out()">
           <i class="fas fa-power-off"></i> Log Out
         </a>
       </li>

@@ -8,16 +8,24 @@
   margin-left: 197px;
 }
 .contBox {
+  background: rgba(0,0,0,0) url("/assets/images/in.jpg") no-repeat scroll 0 0/cover;
   width: 940px;
   border: 2px;
   padding: 10px;
   margin: 10px;
   height: 100vh;
   margin-top: 45px;
-  margin-left: 150px;
+  margin-left: 58px;
   box-shadow: 0 0 20px 1px #5c6979;
   cursor: pointer;
   border-radius: 8px;
+}
+.fonts{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 31px;
+  color: #ec26a6;
 }
 
 
@@ -28,7 +36,10 @@
   }
   .contBox{
     width: 100%;
-    margin-left: 0px;
+    margin-left: -24px;
+  }
+  .fonts{
+    margin-left: -50px;
   }
 
 }
