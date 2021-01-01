@@ -19,3 +19,16 @@
   cursor: pointer;
   border-radius: 8px;
 }
+
+
+//mobile view
+@media (max-width: 600px) {
+  #contact-head{
+    width: 100%;
+  }
+  .contBox{
+    width: 80%;
+    margin-left: 38px;
+  }
+
+}
