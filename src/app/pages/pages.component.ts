@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-pages',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class PagesComponent implements OnInit {
   public closeNav: any;
 
-  constructor() { }
+  constructor(public toastr: ToastrService) { }
 
   ngOnInit(): void {
 
+  }
+
+  out(){
+    this.toastr.success('Log Out Successfully')
   }
 
 

@@ -45,14 +45,12 @@ public imageSrc:any
     if (event.target.files && event.target.files.length) {
       const [file] = event.target.files;
       reader.readAsDataURL(file);
-
       reader.onload = () => {
-
         this.imageSrc = reader.result as string;
+        console.log(this.imageSrc,'this.imageSrc....');
 
-        this.form.patchValue({
-          fileSource: reader.result
-        });
+        this.form.patchValue({fileSource: reader.result});
+
 
       };
 

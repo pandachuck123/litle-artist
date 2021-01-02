@@ -7,7 +7,7 @@
 //}
 
 .bg-img{
-  background: url('/assets/images/login1.jpg');
+  background: url('/assets/images/img3.jpg');
   height:  650px;
   background-size: cover;
   background-position: center;
@@ -36,7 +36,7 @@
   padding: 60px 32px;
   width: 370px;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75)
 }
 .content header{
@@ -51,7 +51,7 @@
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (max-width: 600px) {
   .bg-img{
-    background: url('/assets/images/login1.jpg');
+    background: url('/assets/images/img3.jpg');
     height:  624px;
     background-size: cover;
     background-position: center;
@@ -67,6 +67,9 @@
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.04);
     box-shadow: -1px 4px 25px 0px rgb(0 0 0);
+  }
+  .len{
+    width: 232px !important;
   }
 }
 
