@@ -29,17 +29,144 @@
 }
 
 
-//mobile view
-@media (max-width: 600px) {
+////mobile view
+//@media (max-width: 600px) {
+//  #contact-head{
+//    width: 100%;
+//  }
+//  .contBox{
+//    width: 100%;
+//    margin-left: -24px;
+//  }
+//  .fonts{
+//    margin-left: -50px;
+//  }
+//
+//}
+
+///mobile view
+@media only screen
+and (min-width: 360px) and (max-width: 768px)  {
   #contact-head{
     width: 100%;
   }
   .contBox{
     width: 100%;
-    margin-left: -24px;
+    margin-left: -29px;
+  }
+  .fonts{
+    text-align: center;
+    margin-left: -50px;
+    font-size: 29px;
+  }
+
+}
+
+
+@media (min-device-width: 800px)
+and (max-device-width: 1280px)   {
+  #contact-head{
+    width: 100%;
+  }
+  .contBox{
+    width: 100%;
+    margin-left: -29px;
+  }
+  .fonts{
+    text-align: center;
+    margin-left: -50px;
+    font-size: 29px;
+  }
+
+}
+
+
+
+///ipad...
+
+@media only screen
+and (min-width: 768px) and (max-width: 1024px){
+  /* For general iPad layouts */
+  #contact-head{
+    width: 100%;
+  }
+  .contBox{
+    width: 100%;
+    margin-left: -54px;
+  }
+  .fonts{
+    margin-left: -109px;
+  }
+
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2){
+
+  #contact-head{
+    width: 100%;
+  }
+  .contBox{
+    width: 100%;
+    margin-left: -54px;
   }
   .fonts{
     margin-left: -50px;
   }
 
+}
+
+/* Portrait */
+@media only screen
+and (min-width: 1025px) and (max-width: 1366px)
+and (max-height: 1366px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  #contact-head{
+    width: 100%;
+  }
+  .contBox{
+    width: 100%;
+    margin-left: -54px;
+  }
+  .fonts{
+    margin-left: -50px;
+  }
+
+}
+
+/* Landscape */
+@media only screen
+and (min-width: 1026px) and (max-width: 1366px)
+and (max-height: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  #contact-head{
+    width: 100%;
+  }
+  .contBox{
+    width: 100%;
+    margin-left: -54px;
+  }
+  .fonts{
+    margin-left: -50px;
+  }
+
+
+}
+//
+//@media (min-width: 1367px) {
+//  .nav-side-menu .menu-list .menu-content {
+//    display: block;
+//  }
+//}
+body {
+  margin: 0px;
+  padding: 0px;
 }
