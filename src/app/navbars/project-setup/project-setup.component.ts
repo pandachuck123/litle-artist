@@ -19,6 +19,7 @@ export class ProjectSetupComponent  implements OnInit {
       console.log(this.posts);
     });
   }
+
   // setPageSizeOptions(setPageSizeOptionsInput: string) {
   //   if (setPageSizeOptionsInput) {
   //     this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
