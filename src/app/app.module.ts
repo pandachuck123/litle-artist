@@ -12,6 +12,9 @@ import {NgtUniversalModule} from '@ng-toolkit/universal';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {NgSelectModule} from '@ng-select/ng-select';
 import {ToastrModule} from 'ngx-toastr';
+import {NgxPaginationModule} from 'ngx-pagination';
+import {Ng2SearchPipeModule} from 'ng2-search-filter';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatBadgeModule} from '@angular/material/badge';
@@ -63,8 +66,8 @@ import {ReportComponent} from "./navbars/report/report.component";
 import {ProjectSetupComponent} from "./navbars/project-setup/project-setup.component";
 import { AddUserComponent } from './navbars/add-user/add-user.component';
 import { EditUserComponent } from './navbars/edit-user/edit-user.component';
-import {NgxPaginationModule} from 'ngx-pagination';
-import {Ng2SearchPipeModule} from 'ng2-search-filter';
+import {TeacherReportsService} from "./services/teacher-reports.service";
+
 
 
 
@@ -98,6 +101,7 @@ import {Ng2SearchPipeModule} from 'ng2-search-filter';
     NgSelectModule,
     HttpClientModule,
     Ng2SearchPipeModule,
+    NgxSpinnerModule,
 
 
     SelectDropDownModule,
@@ -141,7 +145,9 @@ import {Ng2SearchPipeModule} from 'ng2-search-filter';
     LoginModule,
 
   ],
-  providers: [],
+  providers: [
+    TeacherReportsService
+  ],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
