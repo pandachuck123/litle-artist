@@ -112,10 +112,10 @@ and (-webkit-min-device-pixel-ratio: 2){
   }
   .contBox{
     width: 100%;
-    margin-left: -54px;
+    margin-left: 30px;
   }
   .fonts{
-    margin-left: -50px;
+    margin-left: 40px;
   }
 
 }
@@ -140,9 +140,31 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 }
 
-/* Landscape */
+/* Landscape  ipad */
+
 @media only screen
-and (min-width: 1026px) and (max-width: 1366px)
+and (min-width: 768px) and (max-width: 1024px)
+and (max-height: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  #contact-head{
+    width: 100%;
+  }
+  .contBox{
+    width: 100%;
+    margin-left: 105px;
+  }
+  .fonts{
+    margin-left: 155px;
+  }
+
+
+}
+
+/* Landscape ipad pro */
+@media only screen
+and (min-width: 1024px) and (max-width: 1366px)
 and (max-height: 1366px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
@@ -152,10 +174,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
   .contBox{
     width: 100%;
-    margin-left: -54px;
+    margin-left: 38px;
   }
   .fonts{
-    margin-left: -50px;
+    margin-left: 155px;
   }
 
 
