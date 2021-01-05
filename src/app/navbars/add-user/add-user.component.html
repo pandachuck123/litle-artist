@@ -19,12 +19,11 @@
     <div class="col-md-6">
     <div class="form-group">
       <label for="body">Body</label>
-      <textarea
+      <input
         formControlName="body"
         id="body"
         type="text"
         class="form-control">
-            </textarea>
       <div *ngIf="f.body.touched && f.body.invalid" class="alert alert-danger">
         <div *ngIf="f.body.errors.required">Body is required.</div>
       </div>

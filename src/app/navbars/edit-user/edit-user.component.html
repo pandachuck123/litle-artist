@@ -1,12 +1,11 @@
-<div class="container">
-  <h1>Update Post</h1>
+<div class="container-fluid updatepost bg-img">
+  <h1>Student Record</h1>
 
-  <a href="#" routerLink="../student-master" class="btn btn-primary">Back</a>
+  <mat-card class="card">
 
   <form [formGroup]="form" (ngSubmit)="submit()">
-
     <div class="form-group">
-      <label for="title">Title:</label>
+      <label for="title">Teacher:</label>
       <input
         formControlName="title"
         id="title"
@@ -14,24 +13,27 @@
         [(ngModel)]="post.title"
         class="form-control">
       <div *ngIf="f.title.touched && f.title.invalid" class="alert alert-danger">
-        <div *ngIf="f.title.errors.required">Title is required.</div>
+        <div *ngIf="f.title.errors.required">Teacher is required.</div>
       </div>
     </div>
 
     <div class="form-group">
-      <label for="body">Body</label>
-      <textarea
+      <label for="body">Student</label>
+      <input
         formControlName="body"
         id="body"
         type="text"
         [(ngModel)]="post.body"
         class="form-control">
-            </textarea>
       <div *ngIf="f.body.touched && f.body.invalid" class="alert alert-danger">
-        <div *ngIf="f.body.errors.required">Body is required.</div>
+        <div *ngIf="f.body.errors.required">Student is required.</div>
       </div>
     </div>
 
-    <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Update</button>
+    <button class="btn btn-primary btnn" type="submit" [disabled]="!form.valid">Update</button>
+<!--    <a href="#" routerLink="student-master" class="btn btn-primary btnn2" >Back</a>-->
+<!--    "routerLink="student-master"-->
   </form>
+  </mat-card>
+
 </div>
