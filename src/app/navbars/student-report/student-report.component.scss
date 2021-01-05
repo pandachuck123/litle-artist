@@ -52,11 +52,11 @@ and (min-width: 360px) and (max-width: 768px)  {
   }
   .contBox{
     width: 100%;
-    margin-left: -29px;
+    margin-left: 0px;
   }
   .fonts{
     text-align: center;
-    margin-left: -50px;
+    margin-left: 0px;
     font-size: 29px;
   }
 
@@ -92,10 +92,10 @@ and (min-width: 768px) and (max-width: 1024px){
   }
   .contBox{
     width: 100%;
-    margin-left: -54px;
+    margin-left: 25px;
   }
   .fonts{
-    margin-left: -109px;
+    margin-left: 25px;
   }
 
 }

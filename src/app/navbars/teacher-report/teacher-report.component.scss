@@ -1,17 +1,32 @@
+
+thead{
+  color: white ;
+}
+tbody{
+  color:  #f3bb73 ;
+}
+.container{
+  width: 100%;
+}
+
 ///mobile view
 @media only screen
 and (min-width: 360px) and (max-width: 768px)  {
-  #contact-head{
+  .container{
     width: 100%;
+    margin-left: 0px;
   }
-  .contBox{
+  .header{
+    width: 131%;
+
+  }
+  hr{
+    width: 125%;
+  }
+  .body{
     width: 100%;
-    margin-left: -29px;
-  }
-  .fonts{
-    text-align: center;
-    margin-left: -50px;
-    font-size: 29px;
+    margin-left: -13px;
+    font-size: 7.2px;
   }
 
 }
@@ -19,17 +34,21 @@ and (min-width: 360px) and (max-width: 768px)  {
 
 @media (min-device-width: 800px)
 and (max-device-width: 1280px)   {
-  #contact-head{
+  .container{
     width: 100%;
   }
-  .contBox{
+  .header{
     width: 100%;
-    margin-left: -29px;
+
   }
-  .fonts{
-    text-align: center;
-    margin-left: -50px;
-    font-size: 29px;
+  hr{
+    width: 100%;
+  }
+  .body{
+    width: 100%;
+    margin-left: 0px;
+    font-size: 8px;
+
   }
 
 }
@@ -40,17 +59,34 @@ and (max-device-width: 1280px)   {
 
 @media only screen
 and (min-width: 768px) and (max-width: 1024px){
+  .container{
+    width: 100%;
+    margin-left: 20px;
+  }
+  .header{
+    width: 100%;
+
+  }
+  hr{
+    width: 100%;
+  }
+  .body{
+    width: 100%;
+    margin-left: 0px;
+    font-size: 10px;
+
+  }
   /* For general iPad layouts */
-  #contact-head{
-    width: 100%;
-  }
-  .contBox{
-    width: 100%;
-    margin-left: -54px;
-  }
-  .fonts{
-    margin-left: -109px;
-  }
+  //#contact-head{
+  //  width: 100%;
+  //}
+  //.contBox{
+  //  width: 100%;
+  //  margin-left: -54px;
+  //}
+  //.fonts{
+  //  margin-left: -109px;
+  //}
 
 }
 
@@ -60,18 +96,23 @@ and (min-width: 768px) and (max-width: 1024px){
 and (min-device-width: 1024px)
 and (max-device-width: 1366px)
 and (-webkit-min-device-pixel-ratio: 2){
+  .container{
+    width: 100%;
+    margin-left: 30px;
+  }
+  .header{
+    width: 100%;
 
-  #contact-head{
+  }
+  hr{
     width: 100%;
   }
-  .contBox{
+  .body{
     width: 100%;
-    margin-left: -54px;
-  }
-  .fonts{
-    margin-left: -50px;
-  }
+    margin-left: 0px;
+    font-size: 20px;
 
+  }
 }
 
 /* Portrait */
@@ -80,18 +121,22 @@ and (min-width: 1025px) and (max-width: 1366px)
 and (max-height: 1366px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-
-  #contact-head{
+  .container{
     width: 100%;
   }
-  .contBox{
+  .header{
     width: 100%;
-    margin-left: -54px;
-  }
-  .fonts{
-    margin-left: -50px;
-  }
 
+  }
+  hr{
+    width: 100%;
+  }
+  .body{
+    width: 100%;
+    margin-left: 0px;
+    font-size: 8px;
+
+  }
 }
 
 /* Landscape */
@@ -100,18 +145,22 @@ and (min-width: 1026px) and (max-width: 1366px)
 and (max-height: 1366px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-
-  #contact-head{
+  .container{
     width: 100%;
   }
-  .contBox{
+  .header{
     width: 100%;
-    margin-left: -54px;
-  }
-  .fonts{
-    margin-left: -50px;
-  }
 
+  }
+  hr{
+    width: 100%;
+  }
+  .body{
+    width: 100%;
+    margin-left: 0px;
+    font-size: 10px;
+
+  }
 
 }
 //
@@ -120,7 +169,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 //    display: block;
 //  }
 //}
-body {
-  margin: 0px;
-  padding: 0px;
-}
+
+
+//body {
+//  margin: 0px;
+//  padding: 0px;
+//}
